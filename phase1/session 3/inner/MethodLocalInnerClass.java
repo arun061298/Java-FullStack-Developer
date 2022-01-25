@@ -1,0 +1,23 @@
+package com.simplilearn.inner;
+
+public class MethodLocalInnerClass {
+	public void display()
+	{
+		class Inner
+		{
+			void myMethod()
+			{
+				System.out.println("Method form Inner class");
+				
+			}
+		}
+		Inner inner=new Inner();
+		inner.myMethod();
+	}
+	public static void main(String[] args) {
+		
+		MethodLocalInnerClass mlic=new MethodLocalInnerClass();
+		mlic.display();
+	}
+
+}
